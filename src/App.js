@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './components/pages/Home';
+import Edible from './components/pages/Edible';
+import Cool from './components/pages/Cool';
+import Toxic from './components/pages/Toxic';
+
+import Container from './components/layout/Container';
+import NavBar from './components/layout/NavBar';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Container customClass="min-height">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/edible' element={<Edible />} />
+          <Route path='/cool' element={<Cool />} />
+          <Route path='/toxic' element={<Toxic />} />
+        </Routes>
+        <Footer />
+      </Container>
+    </Router>
   );
 }
 
