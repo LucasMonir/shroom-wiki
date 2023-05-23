@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 function ShroomCard({ title, subtitle, img }) {
     return (
-        <Card sx={{ maxWidth: 200 }}>
+        <Card sx={{ width: 250 }}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={img}
@@ -16,7 +16,10 @@ function ShroomCard({ title, subtitle, img }) {
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    {title}
+                    {title.split(' ')[0]}
+                </Typography>
+                <Typography gutterBottom variant="h6" component="div">
+                    {title.split(' ')[1]}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     {subtitle}
