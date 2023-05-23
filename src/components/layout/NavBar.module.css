@@ -18,8 +18,9 @@
 .item a {
     color: aliceblue;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .item a:hover {
-    color:rgb(139, 122, 255);
+    color: var(--shroom);
 }

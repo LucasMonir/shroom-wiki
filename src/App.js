@@ -8,6 +8,7 @@ import Toxic from './components/pages/Toxic';
 import Container from './components/layout/Container';
 import NavBar from './components/layout/NavBar';
 import Footer from './components/layout/Footer';
+import style from './components/layout/global.css'
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
           <Route path='/cool' element={<Cool />} />
           <Route path='/toxic' element={<Toxic />} />
         </Routes>
-        <Footer />
       </Container>
+      <Footer />
     </Router>
   );
 }

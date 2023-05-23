@@ -17,10 +17,10 @@ function NavBar() {
                     <Link to='/'>Home</Link>
                 </li>
                 <li className={style.item}>
-                    <Link to='/edible'>Edible</Link>
+                    <Link to='/cool'>Cool</Link>
                 </li>
                 <li className={style.item}>
-                    <Link to='/cool'>Cool</Link>
+                    <Link to='/edible'>Edible</Link>
                 </li>
                 <li className={style.item}>
                     <Link to='/toxic'>Toxic</Link>
