@@ -1,14 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './components/pages/Home';
-import Edible from './components/pages/Edible';
-import Cool from './components/pages/Cool';
-import Toxic from './components/pages/Toxic';
-
-import Container from './components/layout/Container';
-import NavBar from './components/layout/NavBar';
-import Footer from './components/layout/Footer';
-import style from './components/layout/global.css'
+import Container from './components/layout/js/Container';
+import NavBar from './components/layout/js/NavBar';
+import Footer from './components/layout/js/Footer';
+import Home from './components/pages/js/Home';
+import Edible from './components/pages/js/Edible';
+import Cool from './components/pages/js/Cool';
+import Toxic from './components/pages/js/Toxic';
 
 function App() {
   return (

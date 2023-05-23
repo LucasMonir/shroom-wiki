@@ -1,6 +1,7 @@
-import style from './Home.module.css'
-import shroom from '../../img/Shroom.svg'
-import LinkButton from '../layout/LinkButton';
+import style from '../css/Home.module.css'
+import shroom from '../../../img/Shroom.svg'
+import LinkButton from '../../layout/js/LinkButton';
+
 function Home() {
     return (
         <section className={style.home_container}>
