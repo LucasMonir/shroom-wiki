@@ -5,41 +5,27 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { createTheme } from '@mui/material';
-import { ThemeProvider } from '@emotion/react';
+import style from '../css/ShroomCard.module.css'
 
 function ShroomCard({ title, subtitle, img }) {
-    const theme = createTheme({
-        palette: {
-            primary: {
-                main: '#8b7aff',
-            }
-        },
-    });
-
     return (
-        <Card sx={{ width: 250 }}>
+        <Card sx={{ width: 250 }} className={style.card_info}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={img}
                 title={title}
             />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    {title.split(' ')[0]}
-                </Typography>
+            <CardContent sx={{}}>
                 <Typography gutterBottom variant="h6" component="div">
-                    {title.split(' ')[1]}
+                    {title.split(' ')[0]} <small>{title.split(' ')[1]}</small>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    {subtitle}
+                    {subtitle.slice(0, 110)}...
                 </Typography>
             </CardContent>
-            <CardActions>
-                <ThemeProvider theme={theme}>
-                    <Button size="small" color='primary'>Share</Button>
-                    <Button size="small" color='primary'>Learn More</Button>
-                </ThemeProvider>
+            <CardActions className={style.card_actions}>
+                <Button className={style.card_button} size="small" color='primary'>Share</Button>
+                <Button className={style.card_button} size="small" color='primary'>Learn More</Button>
             </CardActions>
         </Card>
     );

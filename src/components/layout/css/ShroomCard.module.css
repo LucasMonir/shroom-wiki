@@ -1,0 +1,15 @@
+.card_button {
+    background-color: var(--shroom-secondary);
+    border-radius: 10px 5px;
+    padding: 5px;
+    color: var(--shroom);
+}
+
+.card_info {
+    background-color: var(--shroom-card-bg);
+}
+
+.card_actions {
+    display: flex;
+    justify-content: space-around;
+}

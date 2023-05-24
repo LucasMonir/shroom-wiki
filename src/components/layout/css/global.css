@@ -1,3 +1,5 @@
 :root {
-    --shroom: rgb(139, 122, 255);
+    --shroom: #8b7aff;
+    --shroom-secondary: #463D80;
+    --shroom-card-bg: #e9e7f7;
 }
