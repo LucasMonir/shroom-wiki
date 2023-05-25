@@ -7,7 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import style from '../css/ShroomCard.module.css'
 
-function ShroomCard({ title, subtitle, img }) {
+function ShroomCard({ title, description, img }) {
+
     return (
         <Card sx={{ width: 250 }} className={style.card_info}>
             <CardMedia
@@ -20,7 +21,7 @@ function ShroomCard({ title, subtitle, img }) {
                     {title.split(' ')[0]} <small>{title.split(' ')[1]}</small>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    {subtitle.slice(0, 110)}...
+                    {description.slice(0, 110)}...
                 </Typography>
             </CardContent>
             <CardActions className={style.card_actions}>
