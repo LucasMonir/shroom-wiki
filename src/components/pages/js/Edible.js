@@ -19,7 +19,7 @@ function Edible() {
             .then((x) => { setShrooms(x) })
             .catch(err => console.log(err))
     }, [])
-
+    
     return (
         <ShroomList shrooms={shrooms} title={title} subtitle={subtitle}></ShroomList>
     );

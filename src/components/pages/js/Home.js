@@ -9,7 +9,7 @@ function Home() {
                 Welcome to <span>ShroomWiki!</span>
             </h1>
             <p>Explore the Fungi!</p>
-            <LinkButton to='/cool' text='Get to know some cool mushrooms :)'></LinkButton>
+            <LinkButton to='/mushroom' text='Go to a Random Mushroom :)'></LinkButton>
             <img src={shroom} alt="mushroom" />
         </section>
     );
