@@ -4,7 +4,7 @@ import ShroomList from "../../layout/js/ShroomList";
 function Edible() {
     const [shrooms, setShrooms] = useState([]);
     const title = "These are believed to be Edible mushrooms!"
-    const subtitle = "Be cautious whenever foraging, we don't encourage you to eat any mushrooms without proper knowledge, we post for educational purpouses only!"
+    const subtitle = "Be cautious, we don't encourage you to eat any mushrooms without proper knowledge, we post for educational purpouses only!"
 
     useEffect(() => {
         fetch('http://localhost:4200/shrooms',
