@@ -13,10 +13,12 @@
 }
 
 .shroom_image {
+    border-radius: 30px 0px;
     height: 600px;
     width: 500px;
     border: 1px solid red;
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 5px;
 }
 
 .shroom_data {
@@ -25,6 +27,8 @@ margin-bottom: 1rem;
     width: 750px;
     height: 600px;
     color: white;
+    border: 1px solid #222;
+    box-shadow: 1px 1px 5px #222;
 }
 
 .mushroom_name {
@@ -51,6 +55,6 @@ margin-bottom: 1rem;
     overflow-y: scroll;
 }
 
-.mushroom_info{
+.mushroom_info {
     color: black;
 }
