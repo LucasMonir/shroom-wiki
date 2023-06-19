@@ -2,11 +2,10 @@ import style from '../css/Mushroom.module.css'
 import { useEffect, useState } from "react";
 
 function Mushroom({ id }) {
-    const [shroom, setShroom] = useState();
+    const [shroom, setShroom] = useState([]);
 
     useEffect(() => {
-        if (id) {
-
+        if (!id) {
             fetch('http://localhost:4200/randomShroom',
                 {
                     method: 'GET',
@@ -15,7 +14,7 @@ function Mushroom({ id }) {
                     },
 
                 })
-                .then(x => x.json())
+                .then(x => x.json()).then(x => console.log(x))
                 .then((x) => { setShroom(x) })
                 .catch(err => console.log(err))
         }
