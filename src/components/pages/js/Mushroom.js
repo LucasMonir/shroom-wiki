@@ -14,13 +14,11 @@ function Mushroom({ id }) {
                     },
 
                 })
-                .then(x => x.json()).then(x => console.log(x))
-                .then((x) => { setShroom(x) })
+                .then(x => x.json())
+                .then((x) => { setShroom(x)})
                 .catch(err => console.log(err))
-        } else {
-
         }
-    })
+    }, [])
 
     return (
         <section className={style.shroom_container}>
@@ -40,7 +38,7 @@ function Mushroom({ id }) {
                         </ul>
 
                         <p className={style.mushroom_description}>
-                            {shroom.description}
+                            {  shroom.description}
                         </p>
                     </div>
                 </div>

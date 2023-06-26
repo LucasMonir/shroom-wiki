@@ -10,7 +10,7 @@ function ShroomList({ shrooms, title, subtitle }) {
             </div>
             <div className={style.card_container}>
                 {shrooms && (
-                    shrooms.map((x, i) => <ShroomCard title={x.title} key={i} description={x.description} img={x.img} />)
+                    shrooms.map((x, i) => <ShroomCard title={x.name} key={i} description={x.description} img={x.img} />)
                 )}
             </div>
         </section>
