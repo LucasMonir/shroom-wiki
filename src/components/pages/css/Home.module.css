@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4em;
 }
 
 .home_container h1 {
@@ -15,7 +14,7 @@
 .home_container h1 span {
     color: rgb(139, 122, 255);
     padding: 0 0.2em;
-    background-color: #222;
+    background-color: var(--shroom-black);
     border-radius: 25px 5px;
 }
 

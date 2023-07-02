@@ -24,3 +24,7 @@
 .item a:hover {
     color: var(--shroom);
 }
+
+.active_link{
+    color: var(--shroom);
+}
