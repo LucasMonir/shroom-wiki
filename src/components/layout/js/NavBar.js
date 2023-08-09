@@ -27,6 +27,9 @@ function NavBar() {
                 <li className={style.item}>
                     <Link to='/toxic' style={location.pathname === '/toxic' ? activeStyle : inactiveStyle}>Toxic</Link>
                 </li>
+                <li className={style.item}>
+                    <Link to='/login' style={location.pathname === '/login' ? activeStyle : inactiveStyle}>Login</Link>
+                </li>
             </ul>
 
         </nav>
