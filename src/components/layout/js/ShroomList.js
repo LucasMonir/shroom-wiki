@@ -17,5 +17,5 @@ function ShroomList({ shrooms, title, subtitle }) {
         </section>
     );
 }
-
+ 
 export default ShroomList;
