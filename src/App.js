@@ -9,6 +9,7 @@ import Edible from './components/pages/js/Edible';
 import Cool from './components/pages/js/Cool';
 import Toxic from './components/pages/js/Toxic';
 import Mushroom from './components/pages/js/Mushroom';
+import Login from './components/pages/js/Login';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/edible' element={<Edible />} />
           <Route path='/cool' element={<Cool />} />
           <Route path='/toxic' element={<Toxic />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/mushroom' element={<Mushroom />} />
         </Routes>
       </Container>

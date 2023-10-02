@@ -3,4 +3,10 @@
     --shroom-secondary: #463D80;
     --shroom-bg: #6b5ec5;
     --shroom-card-bg: #e9e7f7;
+    --shroom-black: #222;
+}
+
+html {
+    min-width: 700px;
+    min-height: 700px;
 }
